@@ -1,0 +1,22 @@
+.header h1 {
+  font-size: 2rem;
+  font-variation-settings: 'wght' 600;
+  line-height: 1;
+}
+
+// hér er stuðningur við skalanlegaletur stærð með fallback
+@media (min-width: 1000px) {
+  .header__heading {
+    font-size: 4rem;
+  }
+}
+
+/*
+ef vafri styður clamp, notum það til að skala línulega, annars er 2rem <800px
+og með media query að ofan farið í 4rem í >=800px
+*/
+@supports (font-size: clamp(1rem, 2rem, 3rem)) {
+  .header__heading {
+    font-size: clamp(2rem, var(--font-size) + 4vw, 4rem);
+  }
+}

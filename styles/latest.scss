@@ -1,0 +1,40 @@
+.latest h2 {
+  margin-bottom: calc(var(--spacing) / 2);
+}
+
+.latest__section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: var(--gutter);
+  overflow: hidden;
+}
+
+@media (min-width: 1000px) {
+  .latest__section {
+    margin-bottom: 0;
+  }
+}
+
+.latest__section:last-child {
+  padding-right: 0;
+}
+
+.latest__section h3 {
+  margin-bottom: calc(var(--spacing) / 2);
+}
+
+.latest__section .image {
+  margin-bottom: calc(var(--spacing) / 2);
+  order: -1;
+}
+
+.latest__section .image img {
+  height: 200px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.latest__section p {
+  flex: 1;
+  margin-bottom: var(--spacing);
+}

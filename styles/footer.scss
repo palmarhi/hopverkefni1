@@ -1,0 +1,32 @@
+body {
+    background-color:#3C2A1E;
+  }
+
+
+.footer_section {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--gutter);
+    width: 30%;
+}
+
+.footer_section h3 {
+    font-size: 2rem;
+}
+
+.footer_section p {
+    font: 1em sans-serif;
+}
+
+.footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;   
+    width: 100px;
+    height: 2rem; 
+}
+  
+ .footer_bottom p {
+     text-align: center;
+  }
+      

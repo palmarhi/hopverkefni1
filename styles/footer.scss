@@ -1,5 +1,9 @@
-body {
+  #footer {
+    position: absolute;
     background-color:#3C2A1E;
+    bottom: 0;
+    width: 100%;
+    height: 1.6875rem;            /* Footer height */
   }
 
 
@@ -12,10 +16,12 @@ body {
 
 .footer_section h3 {
     font-size: 2rem;
+    color:#fff;
 }
 
 .footer_section p {
     font: 1em sans-serif;
+    color:#fff;
 }
 
 .footer_bottom {
@@ -27,6 +33,7 @@ body {
 }
   
  .footer_bottom p {
-     text-align: center;
+    text-align: center;
+    color:#fff;
   }
       

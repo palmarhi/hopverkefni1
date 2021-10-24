@@ -1,19 +1,131 @@
+
 <!DOCTYPE html>
 <html lang="is">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hópverkefni 1 - Pöntunarsíða</title>
+    <title>Tæknibúðin - Pöntunarsíða</title>
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../grid.css" />
   </head>
   <body>
+    <nav>
+
+    \<nav>
+
     <div class="wrapper">
       <header class="header">
-        <h1 class="heading">Pöntunarsíða</h1>
+        <h1 class="heading">Pöntun</h1>
       </header>
 
       <main>
+
+      <form action="index.html" method="get">
+        <div class="order">
+          <div>
+            <legend><h3>Kaupandi</h3></legend>
+              <label for="nafn">Nafn</label>
+              <input type="text" name="nafn" id="nafn">
+            <div>
+              <label for="kennitala">Kennitala</label>
+              <input
+                type="text"
+                name="kennitala"
+                id="kennitala"
+                placeholder="000000-0000">
+            </div>
+            <div>
+              <label for="simi">Sími</label>
+              <input type="tel" name="simi" id="simi" required aria-describedby="simi-required">
+            </div>
+            <div>
+              <label for="netfang">Netfang</label>
+              <input type="email" name="netfang" id="netfang" required aria-describedby="netfang-required">
+            </div>
+          </div>
+          <div>
+            <legend><h3>Afhending</h3></legend>
+              <label for="heimili">Heimilisfang</label>
+              <input type="text" name="nafn" id="nafn">
+            <div>
+              <label for="postnumer">Póstnúmer</label>
+              <input
+                type="number"
+                name="postnumer"
+                id="postnumer"
+                placeholder="000">
+            </div>
+            <div>
+              <label for="stadur">Staður</label>
+              <input type="text" name="stadur">
+            </div>
+            <div>
+              <label for="netfang">Athugasemd</label>
+              <input type="text" name="athugasemd" id="athugasemd">
+            </div>
+          </div>
+
+          <button>SENDA PÖNTUN</button>
+
+      <div class="footer">
+        <section>
+          <h4>Opnunartími</h4>
+          <ul>
+            <li>
+              <h5>Opnunartími</h5>
+              <h5>Opið á laugardögum frá 12:00-16:00</h5>
+              <h5>Lokað á sunnudögum</h5>
+              </li>
+            </ul>
+        </section>
+
+        <section>
+          <h4>Hafðu samband</h4>
+          <ul>
+            <li>
+              <h5>Skiptiborð: 234-4568</h5>
+              <h5>Tölvupóstur: thjonusta@exaple.org</h5>
+              </li>
+            </ul>
+        </section>
+
+        <section>
+          <h4>Hafðu samband</h4>
+          <ul>
+            <li>
+              <h5><a href="track.html">Rekja sendingu</a></h5>
+              <h5><ahref="track.html">Rekja sendingu</a></h5>
+              <h5><a href="about.html">Um okkur</a></h5>
+              <h5><a href="jobs.html">Störf</a></h5>
+              </li>
+            </ul>
+        </section>
+
+        <div>
+          <h2><span>Hönnun</span></h2>
+          <ul>
+            <li>
+              <h3><a href="index.html">Hönnun á töflum, ótrúleg ný tækni</a></h3>
+              <div class="image">
+                <img src="images/tolur.jpg" alt="">
+              </div>
+              <time datetime="2021-09-13T15:00">13.09.2021 — 15:00</time>
+            </li>
+            <li>
+              <h3><a href="index.html">Straumar og stefnur í hönnun árið 2021, allt þetta nýja flotta og frábæra sem þú VERÐUR að nota</a></h3>
+              <time datetime="2021-09-13T15:00">13.09.2021 — 15:00</time>
+            </li>
+            <li>
+              <h3><a href="index.html">Hvernig tala skal við forritara sem hönnuður</a></h3>
+              <time datetime="2021-09-13T15:00">13.09.2021 — 15:00</time>
+            </li>
+            <li>
+              <h3><a href="index.html">Allt um breytilegar leturgerðir</a></h3>
+              <time datetime="2021-09-13T15:00">13.09.2021 — 15:00</time>
+            </li>
+          </ul>
+        </div>
+
       </main>
     </div>
   </body>

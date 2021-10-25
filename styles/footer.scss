@@ -1,26 +1,34 @@
 .footer {
-    position: absolute;
     background-color: #3C2A1E;
     bottom: 0;
     width: 100%;
-    height: 16.875rem;
+    min-height: 16.875rem;
     margin-bottom: 0;
-  }
+}
 
 
 .footer_section {
     display: flex;
     flex-direction: column;
     width: 30%;
+    padding:10px 0px 25px 0px;
 }
 
+
 .footer_section h3 {
+	border-bottom: 2px solid #E1CEC2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     font-size: 2rem;
     color:#fff;
 }
 
 .footer_section p {
-    font: 1em sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-bottom:0px; 
+    margin-bottom:8px;
+    font: 1rem sans-serif;
     color:#fff;
 }
 
@@ -28,12 +36,13 @@
     display: flex;
     align-items: center;
     justify-content: center;   
-    width: 100px;
+    width: 930px;
     height: 2rem; 
 }
   
  .footer_bottom p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
     text-align: center;
     color:#fff;
   }
-      

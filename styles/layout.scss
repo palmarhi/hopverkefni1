@@ -17,7 +17,7 @@ main {
 }
 
 // Nýjustu fréttir og mest lesið
-.latest-most-read {
+.product {
   @media (min-width: 700px) {
     display: grid;
     gap: var(--gutter);
@@ -26,49 +26,42 @@ main {
   }
 }
 
-.latest {
-  @media (min-width: 700px) {
-    grid-column: 1 / span 8;
-  }
+.product-details__section {
+  // @media (min-width: 700px) {
+  //   grid-column: 1 / span 8;
+  // }
 
   @media (min-width: 1000px) {
-    grid-column: 1 / span 9;
-  }
-
-  &__content {
-    @media (min-width: 1000px) {
-      display: grid;
-      gap: var(--gutter);
-      grid-template-columns: repeat(3, 1fr);
-    }
-  }
-
-  &__section {
-    @media (min-width: 1000px) {
-      grid-column: span 1;
-    }
+    grid-column: span 6;
   }
 }
 
-.most-read {
+.product-description {
   @media (min-width: 700px) {
-    grid-column: 9 / span 4;
-  }
-
-  @media (min-width: 1000px) {
-    grid-column: 10 / span 3;
+    display: grid;
+    gap: var(--gutter);
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: auto;
   }
 }
 
-.categories {
+.product-description__section {
+  @media (min-width: 1000px) {
+    grid-column: 3 / span 8;
+  }
+}
+
+.related-products {
   @media (min-width: 700px) {
     display: grid;
     gap: var(--gutter);
     grid-template-columns: repeat(12, 1fr);
   }
+
+  background: #e1cec2;
 }
 
-.categories__section {
+.related-products__section {
   @media (min-width: 700px) {
     grid-column: span 6;
   }

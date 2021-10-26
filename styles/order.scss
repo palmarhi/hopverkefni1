@@ -1,63 +1,51 @@
 .main_content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  padding: 0px 15px 60px;
-
-  position: static;
-  width: 1440px;
-  height: 515px;
-  left: 0px;
-  top: 0px;
+  position: relative;
+width: 1440px;
+height: 1069px;
+background: #FFFFFF;
 }
 
 .order {
   display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-position: static;
-width: 690px;
-height: 464px;
-left: 15px;
-top: 0px;
-}
-
-.input_field {
-display: flex;
-flex-direction: column;
-align-items: flex-start;
-padding: 0px;
-
-position: static;
-width: 690px;
-height: 217px;
-left: 0px;
-}
-
-.input_field :first-child {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 690px;
+  height: 464px;
+  left: 15px;
   top: 0px;
 }
 
-
-.input_field :last-child {
-  top: 247px;
+.input_field {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 690px;
+  height: 217px;
+  left: 0px;
 }
 
+  :first-child {
+    top: 0px;
+  }
+
+  :last-child {
+    top: 247px;
+  }
 
 input {
-display: flex;
-flex-direction: row;
-align-items: flex-start;
-padding: 0px;
-
-position: static;
-width: 690px;
-height: 159px;
-left: 0px;
-top: 58px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 690px;
+  height: 159px;
+  left: 0px;
+  top: 58px;
 }
 
 .basket {
@@ -67,12 +55,12 @@ top: 58px;
   padding: 1rem;
 }
 
-p {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 32px;
-}
+  .basket p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
 
 .total p {
   font-weight: 700;
@@ -92,8 +80,9 @@ p {
   border: 1px solid #3C2A1E;
   box-sizing: border-box;
   border-radius: 5px;
+}
 
-  p {
+  .order_button p {
     position: static;
     width: 156px;
     height: 32px;
@@ -104,4 +93,3 @@ p {
     font-weight: normal;
     font-size: 20px;
   }
-}

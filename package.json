@@ -10,7 +10,8 @@
     "dev": "concurrently npm:sass-watch npm:browser-sync",
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy": "cpy ./*.html ./build/",
-    "build": "concurrently npm:sass-build npm:copy",
+    "copy-images": "cpy ./images/* ./build/images/",
+    "build": "concurrently \"npm:sass-build\" \"npm:copy\" \"npm:copy-images\"",
     "lint": "stylelint styles.scss ./**/*.scss"
   },
   "keywords": [],

@@ -129,7 +129,14 @@ input {
     top: 10px;
     font-family: Lato;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 400;
     font-size: 20px;
+    position: static;
+    line-height: 32px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 0px 10px;
   }
 }

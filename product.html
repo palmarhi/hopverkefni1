@@ -12,7 +12,34 @@
 <body>
   <div class="wrapper">
     <header class="header">
-      <h1 class="heading">Vara</h1>
+      <nav>
+        <div class="logo"><img src="./icons/Logo.svg"><h1><a href="./index.html">Tæknibúðin</a></h1></div>
+      </nav>
+      <!-- <div class="cart">
+        <img src="./icons/cart.svg">
+        <div class="count">1</div>
+     </div> -->
+      <div class="menu">
+        <div class="search">
+          <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+          <img src="./icons/search.svg">
+        </div>
+        <input type="checkbox" id="mobile-nav" class="mobile">
+        <label for="mobile-nav" class="mobile-trigger">Menu</label>
+        <nav>
+          <ul class="nav">
+            <li class="nav__item">
+              <a href="#foo" class="nav__link">Nýjar vörur</a>
+            </li>
+            <li class="nav__item">
+              <a href="#bar" class="nav__link">Tilboðs vörur</a>
+            </li>
+            <li class="nav__item">
+              <a href="#baz" class="nav__link">Allar vörur</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
@@ -67,28 +94,28 @@
       <div class="related-products">
         <!-- <h2>Tengdar vörur</h2> -->
         <section class="related-products__section">
-          <h3>Vinalegur vinnuróbot</h3>
           <div class="image">
             <img class="image__img" src="images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="" />
           </div>
-          <ul>
-            <li>Nýtt</li>
-            <li>Ekki fyrir börn</li>
-          </ul>
+          <h3>Vinalegur vinnuróbot</h3>
+          <div class="tags">
+            <p class="tag">Nýtt</p>
+            <p class="tag">Ekki fyrir börn</p>
+          </div>
           <p>189.000 kr.</p>
-          <button>Setja í körfu</button>
+          <button class="add-to-cart">Setja í körfu</button>
         </section>
         <section class="related-products__section">
-          <h3>Matrixið</h3>
           <div class="image">
             <img class="image__img" src="images/markus-spiske-iar-afB0QQw-unsplash 1.jpg" alt="" />
           </div>
-          <ul>
-            <li>Nýtt</li>
-            <li>Ekki fyrir róbóta</li>
-          </ul>
+          <h3>Matrixið</h3>
+          <div class="tags">
+            <p class="tag">Nýtt</p>
+            <p class="tag">Ekki fyrir róbóta</p>
+          </div>
           <p>299.999.999.499.990 kr.</p>
-          <button>Setja í körfu</button>
+          <button class="add-to-cart">Setja í körfu</button>
         </section>
       </div>
 

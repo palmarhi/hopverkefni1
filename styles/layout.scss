@@ -16,7 +16,6 @@ main {
   margin-bottom: var(--gutter);
 }
 
-// Nýjustu fréttir og mest lesið
 .product {
   @media (min-width: 700px) {
     display: grid;
@@ -27,11 +26,7 @@ main {
 }
 
 .product-details__section {
-  // @media (min-width: 700px) {
-  //   grid-column: 1 / span 8;
-  // }
-
-  @media (min-width: 1000px) {
+  @media (min-width: 700px) {
     grid-column: span 6;
   }
 }
@@ -46,7 +41,7 @@ main {
 }
 
 .product-description__section {
-  @media (min-width: 1000px) {
+  @media (min-width: 700px) {
     grid-column: 3 / span 8;
   }
 }
@@ -58,15 +53,27 @@ main {
     grid-template-columns: repeat(12, 1fr);
   }
 
-  background: #e1cec2;
+  background: $accent-color;
+  padding: 38px 0 60px;
 }
 
 .related-products__section {
   @media (min-width: 700px) {
-    grid-column: span 6;
+    grid-column: span 4;
   }
-
   @media (min-width: 1000px) {
     grid-column: span 3;
   }
+
+  background: #fff;
+  border-radius: 5px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  height: 360px;
+  justify-content: space-between;
+  max-width: 330px;
+  padding: 15px;
+
+
 }

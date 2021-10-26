@@ -1,0 +1,44 @@
+.main_content {
+    box-sizing: border-box;
+    width: 100;
+  }
+
+  .order {
+    float: left;
+    width: 50%;
+    margin: 0 1% 1% 0;
+    padding: 1rem;
+  }
+
+  .input_field {
+    margin-bottom: 1rem;
+  }
+
+  .input_field input {
+    width: 100%;
+  }
+
+  .basket {
+    float: left;
+    width: 50%;
+    margin: 0 1% 1% 0;
+    padding: 1rem;
+  }
+
+  .basket p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  .footer {
+      background-color: #3C2A1E;
+      bottom: 0;
+      width: 100%;
+      min-height: 16.875rem;
+      margin-bottom: 0;
+  }
+   .total p {
+    font-weight: bold;
+   }

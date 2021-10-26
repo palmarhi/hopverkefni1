@@ -11,7 +11,8 @@
     "sass-build": "sass styles.scss ./build/styles.css",
     "copy": "cpy ./*.html ./build/",
     "copy-images": "cpy ./images/* ./build/images/",
-    "build": "concurrently \"npm:sass-build\" \"npm:copy\" \"npm:copy-images\"",
+    "copy-icons": "cpy ./icons/* ./build/icons/",
+    "build": "concurrently \"npm:sass-build\" \"npm:copy\" \"npm:copy-images\" \"npm:copy-icons\"",
     "lint": "stylelint styles.scss ./**/*.scss"
   },
   "keywords": [],

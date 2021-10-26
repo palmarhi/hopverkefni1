@@ -1,238 +1,152 @@
-* { 
-    -moz-box-sizing: border-box; 
-    -webkit-box-sizing: border-box; 
-     box-sizing: border-box; 
+@import 'navigation';
+
+$max-width: 1440px;
+$accent-color: #e1cec2;
+
+* {
+  box-sizing: border-box; 
 }
 
 html {
-    font-family: 'Lato';
-    font-style: normal;
-    max-width: 1440px;
-    margin: 0 auto;
+  font-family: "Lato";
+  font-style: normal;
+  margin: 0;
+}
 
+body {
+  margin: 0;
 }
 
 img {
-    object-fit: cover;
-    height: 169px;
+  object-fit: cover;
+  height: 169px;
 }
 
-h1{
-    font-weight: normal;
-    font-size: 60px;
-    line-height: 80px;
-    margin: 30px 0px 40px 0px;
+h1 {
+  font-weight: normal;
+  font-size: 60px;
+  line-height: 80px;
+  margin: 30px 0px 40px;
 }
 
 h2 {
-    font-weight: normal;
-    font-size: 32px;
-    line-height: 48px;
-    margin: 0px;
-}
-
-nav {
-    height: 60px;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    a{
-        text-decoration: none;
-        color:#000000;
-    }
-
-    .search{
-        display: inline-block;
-
-        input{
-            width: 450px;
-            height: 40px;
-
-            background: #FEFEFE;
-            border: 1px solid #000000;
-            box-sizing: border-box;
-            border-radius: 5px;
-            padding: 6px;
-        }
-
-        img{
-            position: relative;
-            cursor: pointer;
-
-            width: 20px;
-            height: 20px;
-            right: 32px; 
-            top: 5px;
-        }
-    }
-
-    
-    ul {
-        padding: 0;
-        li {
-            display:inline;
-            padding-right: 42px;
-            font-size: 16px;
-            line-height: 24px;
-            margin: 0px 10px;
-        }
-    }
-
-    .cart{
-        img{
-            cursor: pointer;
-            height: 30px;
-            width: 30px;
-
-            overflow: auto;
-            position: relative;
-            top: 10px;
-        }
-
-        .count{
-            width: 20px;
-            height: 20px;
-            position: relative;
-            background: #6F4E37;
-            border-radius: 50%;
-            text-align: center;
-
-            line-height: 20px;
-
-            color: #FEFEFE;
-
-            right: 5px; 
-            top: -7px;
-        }
-    }
-}
-
-.logo{
-    width: auto;
-    display: inline-block;
-
-    img{
-        height: 30px;
-        width: 30px;
-    }
-
-    h1{
-        display: inline-block;
-
-        font-family: 'Lora';
-        font-weight: 700;
-        font-size: 40px;
-        line-height: 40px;
-        margin: 0 0 0 10px;
-    }
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0px;
 }
 
 .order {
-    margin: 5px 0 41.5px 0;
+  margin: 5px 0 41.5px;
 
-    button {
-        background: #E1CEC2;
-        border-radius: 5px;
+  button {
+    background: $accent-color;
+    border-radius: 5px;
 
-        border: none;
+    border: none;
 
-        font-size: 20px;
-        line-height: 32px;
-        cursor: pointer;
+    font-size: 20px;
+    line-height: 32px;
+    cursor: pointer;
 
-        margin-right: 5px;
-    }
+    margin-right: 5px;
+  }
 }
 
 .product {
-    box-sizing: border-box;   
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 15px;
-    
-    max-width: 325px;
-    height: 360px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px;
 
-    background: #FFFFFF;
+  max-width: 330px;
+  height: 360px;
+  background: #FFFFFF;
+  border-radius: 5px;
+
+  h4 {
+    position: static;
+    width: 297px;
+    height: 32px;
+    left: 3px;
+    margin: 0;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  button {
+    cursor: pointer;
+    align-items: center;
+    padding: 10px 15px;
+
+    background: #FEFEFE;
+    border: 1px solid #6F4E37;
+    box-sizing: border-box;
     border-radius: 5px;
 
-    h4 {
-        position: static;
-        width: 297px;
-        height: 32px;
-        left: 3px;
+    margin: 10px 0px;
 
-        margin: 0;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: center;
 
-        font-weight: normal;
-        font-size: 22px;
-        line-height: 32px;
+    color: #3C2A1E;
+  }
+
+  .tag {
+    padding: 5px;
+
+    background: $accent-color;
+    border-radius: 5px;
+
+    float:left;
+
+    margin: 0;
+
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+
+    &:nth-child(2) {
+      margin: 0px 10px;
     }
+  }
 
-    button {
-        cursor: pointer;
-        align-items: center;
-        padding: 10px 15px;
-
-        background: #FEFEFE;
-        border: 1px solid #6F4E37;
-        box-sizing: border-box;
-        border-radius: 5px;
-
-        margin: 10px 0px;
-
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 24px;
-        text-align: center;
-
-        color: #3C2A1E;
-    }
-
-    .tag {
-        padding: 5px;
-
-        background: #E1CEC2;
-        border-radius: 5px;
-
-        float:left;
-
-        margin: 0;
-
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-
-        &:nth-child(2) { margin: 0px 10px; }
-    }
-
-    p {
-        margin: 0;
-    }
+  p {
+    margin: 0;
+  }
 }
 
 
 .products {
-    padding: 38px 15px 60px 15px;
-    background: #E1CEC2;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+  padding: 38px 15px 60px;
+  background: $accent-color;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
 }
 
+main {
+  background: $accent-color;
+  width: 100%;
+}
 
-main:before {
-    content:"";
-    padding: 38px 15px 60px 15px;
-    background-color:#E1CEC2;
-    position: absolute;
-    height: 120%;
-    width: 4000px;
-    left: -2000px;
-    z-index: -1;
+nav,
+.products,
+header {
+  max-width: $max-width;
+  margin: 0 auto;
+}
+
+header {
+  padding: 0 15px;
+}
+
+footer {
+  background-color: #3C2A1E;
+  height: 270px;
 }

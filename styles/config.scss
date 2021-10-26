@@ -17,7 +17,7 @@ $color-border: #ccc;
 // Letur stillingar
 $font-size: 16px;
 $font-family-base: 'Inter', Helvetica, Arial, sans-serif;
-$font-family-heading: 'Playfair Display', Georgia, serif;
+$font-family-heading: 'Lato', Georgia, serif;
 
 // Grid stillingar
 $grid-columns: 12;
@@ -37,7 +37,6 @@ $grid-offset: 20px;
   --font-family-base: #{$font-family-base};
   --font-family-heading: #{$font-family-heading};
 
-  
   --columns: #{$grid-columns};
   --gutter: #{$grid-gutter};
   --offset: #{$grid-offset};

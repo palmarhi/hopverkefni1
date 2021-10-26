@@ -14,17 +14,6 @@
     padding:10px 0px 25px 0px;
 }
 
-.footer_section :first-child {
-  grid-column: 1;
-}
-
-.footer_section :nth-last-child() {
-  grid-column: 5;
-}
-
-.footer_section :last-child {
-  grid-column: 9;
-}
 
 .footer_section h3 {
 	border-bottom: 2px solid #E1CEC2;

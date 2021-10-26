@@ -1,8 +1,8 @@
 .main_content {
   position: relative;
-width: 1440px;
-height: 1069px;
-background: #FFFFFF;
+  width: 1440px;
+  height: 1069px;
+  background: #FFFFFF;
 }
 
 .order {
@@ -28,13 +28,13 @@ background: #FFFFFF;
   left: 0px;
 }
 
-  :first-child {
-    top: 0px;
-  }
+:first-child {
+  top: 0px;
+}
 
-  :last-child {
-    top: 247px;
-  }
+:last-child {
+  top: 247px;
+}
 
 input {
   display: flex;
@@ -49,21 +49,61 @@ input {
 }
 
 .basket {
-  float: left;
-  width: 50%;
-  margin: 0 1% 1% 0;
-  padding: 1rem;
-}
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 690px;
+  height: 262px;
+  left: 735px;
+  top: 0px;
 
-  .basket p {
+  p {
     font-family: 'Lato', sans-serif;
     font-weight: 400;
     font-size: 22px;
     line-height: 32px;
   }
+}
 
-.total p {
-  font-weight: 700;
+.total {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  position: static;
+  width: 690px;
+  height: 32px;
+  left: 0px;
+  top: 230px;
+
+  p {
+    position: static;
+    font-weight: 700;
+    height: 32px;
+    top: 0px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 32px;
+    color: #000000;
+    flex: none;
+
+    &:first-child {
+      width: 76px;
+      left: 0px;
+      order: 0;
+    }
+
+    &:last-child {
+      width: 130px;
+      left: 560px;
+      order: 1;
+    }
+  }
 }
 
 .order_button {
@@ -80,9 +120,8 @@ input {
   border: 1px solid #3C2A1E;
   box-sizing: border-box;
   border-radius: 5px;
-}
 
-  .order_button p {
+  p {
     position: static;
     width: 156px;
     height: 32px;
@@ -93,3 +132,4 @@ input {
     font-weight: normal;
     font-size: 20px;
   }
+}

@@ -8,14 +8,23 @@
   width: 50%;
   margin: 0 1% 1% 0;
   padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  position: static;
+  width: 690px;
+  height: 464px;
+  left: 15px;
+  top: 0px;
 }
 
 .input_field {
   margin-bottom: 1rem;
+}
 
-  input {
-    width: 100%;
-  }
+input {
+  width: 100%;
 }
 
 .basket {
@@ -25,13 +34,41 @@
   padding: 1rem;
 }
 
-  p {
-    font-family: 'Lato', sans-serif;
-    font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-  }
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 32px;
+}
 
 .total p {
-  font-weight: bold;
+  font-weight: 700;
+}
+
+.order_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 10px 15px;
+  position: absolute;
+  width: 186px;
+  height: 52px;
+  left: 16px;
+  top: 0px;
+  background: #6F4E37;
+  border: 1px solid #3C2A1E;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  p {
+    position: static;
+    width: 156px;
+    height: 32px;
+    left: 15px;
+    top: 10px;
+    font-family: Lato;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+  }
 }

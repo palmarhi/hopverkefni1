@@ -18,72 +18,83 @@
       <main>
 
       <h1>Pöntun</h1>
+      <div class="main_content">
+        <form action="./" method="get">
+          <div class="order">
 
-      <form action="index.html" method="get">
-        <div class="order">
-          <div>
-            <legend><h2>Kaupandi</h2></legend>
-              <label for="nafn">Nafn</label>
-              <input type="text" name="nafn" id="nafn">
-            <div>
-              <label for="kennitala">Kennitala</label>
-              <input
-                type="text"
-                name="kennitala"
-                id="kennitala"
-                placeholder="000000-0000">
+            <div class="input_field">
+              <legend><h2>Kaupandi</h2></legend>
+
+                <div class="left">
+                  <div>
+                    <label for="nafn">Nafn</label>
+                    <input type="text" name="nafn" id="nafn">
+                  </div>
+                  <div>
+                    <label for="kennitala">Kennitala</label>
+                    <input
+                      type="text"
+                      name="kennitala"
+                      id="kennitala"
+                      placeholder="000000-0000">
+                  </div>
+                </div>
+
+                <div class="right">
+                  <div>
+                    <label for="simi">Sími</label>
+                    <input type="tel" name="simi" id="simi" required aria-describedby="simi-required">
+                  </div>
+                  <div>
+                    <label for="netfang">Netfang</label>
+                    <input type="email" name="netfang" id="netfang" required aria-describedby="netfang-required">
+                  </div>
+              </div>
             </div>
-            <div>
-              <label for="simi">Sími</label>
-              <input type="tel" name="simi" id="simi" required aria-describedby="simi-required">
+
+            <div class="input_field">
+              <legend><h2>Afhending</h2></legend>
+                <label for="heimili">Heimilisfang</label>
+                <input type="text" name="nafn" id="nafn">
+              <div>
+                <label for="postnumer">Póstnúmer</label>
+                <input
+                  type="number"
+                  name="postnumer"
+                  id="postnumer"
+                  placeholder="000">
+              </div>
+              <div>
+                <label for="stadur">Staður</label>
+                <input type="text" name="stadur">
+              </div>
+              <div>
+                <label for="netfang">Athugasemd</label>
+                <input type="text" name="athugasemd" id="athugasemd">
+              </div>
             </div>
-            <div>
-              <label for="netfang">Netfang</label>
-              <input type="email" name="netfang" id="netfang" required aria-describedby="netfang-required">
-            </div>
+
+
+        <div class="basket">
+          <div class="image">
+            <img class="image__small" src="images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="" />
           </div>
-          <div>
-            <legend><h2>Afhending</h2></legend>
-              <label for="heimili">Heimilisfang</label>
-              <input type="text" name="nafn" id="nafn">
-            <div>
-              <label for="postnumer">Póstnúmer</label>
-              <input
-                type="number"
-                name="postnumer"
-                id="postnumer"
-                placeholder="000">
-            </div>
-            <div>
-              <label for="stadur">Staður</label>
-              <input type="text" name="stadur">
-            </div>
-            <div>
-              <label for="netfang">Athugasemd</label>
-              <input type="text" name="athugasemd" id="athugasemd">
-            </div>
+            <div><p>Vinalegur vinnuróbot</p></div>
+            <div><p>1.499.990 kr.</p></div>
+
+          <div class="image">
+            <img class="image__small" src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="" />
           </div>
+            <div><p>Tæknilegt móðurborð</p></div>
+            <div><p>189.000 kr.</p></div>
 
-      <button>SENDA PÖNTUN</button>
-
-      <div class="basket">
-        <div class="image">
-          <img class="image__small" src="images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="" />
+          <div class="total">
+            <p>Samtals</p>
+            <p>1.688.990 kr.</p>
+          </div>
         </div>
-          <div><p>Vinalegur vinnuróbot</p></div>
-          <div><p>1.499.990 kr.</p></div>
-      
-        <div class="image">     
-          <img class="image__small" src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="" />
-        </div>
-          <div><p>Tæknilegt móðurborð</p></div>
-          <div><p>189.000 kr.</p></div>
 
-        <div><p>Samtals</p></div>
-        <div><p>1.688.990 kr.</p></div>
-
-
-
+        <button class="order_button"><p>SENDA PÖNTUN</p></button>
 
       </main>
     </div>

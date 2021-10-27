@@ -28,13 +28,14 @@
   left: 0px;
 }
 
-:first-child {
-  top: 0px;
-}
+// todo: This needs to be more specific, was breaking the UI in other places
+// :first-child {
+//   top: 0px;
+// }
 
-:last-child {
-  top: 247px;
-}
+// :last-child {
+//   top: 247px;
+// }
 
 input {
   display: flex;

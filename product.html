@@ -11,36 +11,65 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
-      <nav>
-        <div class="logo"><img src="./icons/Logo.svg"><h1><a href="./index.html">Tæknibúðin</a></h1></div>
-      </nav>
-      <!-- <div class="cart">
-        <img src="./icons/cart.svg">
-        <div class="count">1</div>
-     </div> -->
-      <div class="menu">
-        <div class="search">
-          <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
-          <img src="./icons/search.svg">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./icons/Logo.svg">
+        <h1><a href="./index.html">Tæknibúðin</a></h1>
+      </div>
+      <ul class="nav">
+        <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li class="nav__item">
+            <a href="#foo" class="nav__link">Nýjar vörur</a>
+          </li>
+          <li class="nav__item">
+            <a href="#bar" class="nav__link">Tilboðs vörur</a>
+          </li>
+          <li class="nav__item">
+            <a href="#baz" class="nav__link">Allar vörur</a>
+          </li>
         </div>
-        <input type="checkbox" id="mobile-nav" class="mobile">
-        <label for="mobile-nav" class="mobile-trigger">Menu</label>
+      </ul>
+    </nav>
+
+    <!-- <header class="header">
+      <div class="menu">
         <nav>
-          <ul class="nav">
-            <li class="nav__item">
-              <a href="#foo" class="nav__link">Nýjar vörur</a>
-            </li>
-            <li class="nav__item">
-              <a href="#bar" class="nav__link">Tilboðs vörur</a>
-            </li>
-            <li class="nav__item">
-              <a href="#baz" class="nav__link">Allar vörur</a>
-            </li>
-          </ul>
+          <section class="header__section">
+            <div class="logo">
+              <img src="./icons/Logo.svg">
+              <h1><a href="./index.html">Tæknibúðin</a></h1>
+            </div>
+          </section>
+           <div class="cart">
+          <img src="./icons/cart.svg">
+          <div class="count">1</div>
+        </div>
+          <section class="header__section">
+            <div class="search">
+              <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+              <img src="./icons/search.svg">
+            </div>
+          </section>
+          <section class="header__section">
+            <input type="checkbox" id="mobile-nav" class="mobile">
+            <label for="mobile-nav" class="mobile-trigger">Menu</label>
+            <ul class="nav">
+              <li class="nav__item">
+                <a href="#foo" class="nav__link">Nýjar vörur</a>
+              </li>
+              <li class="nav__item">
+                <a href="#bar" class="nav__link">Tilboðs vörur</a>
+              </li>
+              <li class="nav__item">
+                <a href="#baz" class="nav__link">Allar vörur</a>
+              </li>
+            </ul>
+          </section>
         </nav>
       </div>
-    </header>
+    </header> -->
 
     <main>
       <div class="product">

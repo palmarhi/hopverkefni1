@@ -1,31 +1,11 @@
-.main_content {
-  position: relative;
-  width: 1440px;
-  height: 1069px;
-  background: #FFFFFF;
-}
+.footer {
+  //min-height: 16.875rem;
 
-.order {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
   position: static;
-  width: 690px;
-  height: 464px;
-  left: 15px;
-  top: 0px;
-}
-
-.input_field {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  position: static;
-  width: 690px;
-  height: 217px;
+  width: 1441px;
+  height: 270px;
   left: 0px;
+<<<<<<< HEAD
 }
 
 // todo: This needs to be more specific, was breaking the UI in other places
@@ -36,101 +16,55 @@
 // :last-child {
 //   top: 247px;
 // }
+=======
+  top: 617px;
+  background: #3C2A1E;
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+  margin: 0px 0px;
 
-input {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  position: static;
-  width: 690px;
-  height: 159px;
-  left: 0px;
-  top: 58px;
+}
+>>>>>>> ca94919a4bdc35b099bf73bd1fc1b1dc07d66858
+
+.footer_section {
+  box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding:10px 0px 25px 0px;
 }
 
-.basket {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  position: static;
-  width: 690px;
-  height: 262px;
-  left: 735px;
-  top: 0px;
 
-  p {
+.footer_section h3 {
+	border-bottom: 2px solid #E1CEC2;
     font-family: 'Lato', sans-serif;
     font-weight: 400;
-    font-size: 22px;
-    line-height: 32px;
-  }
+    font-size: 2rem;
+    color:#fff;
 }
 
-.total {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  position: static;
-  width: 690px;
-  height: 32px;
-  left: 0px;
-  top: 230px;
-
-  p {
-    position: static;
-    font-weight: 700;
-    height: 32px;
-    top: 0px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 22px;
-    line-height: 32px;
-    color: #000000;
-    flex: none;
-
-    &:first-child {
-      width: 76px;
-      left: 0px;
-      order: 0;
-    }
-
-    &:last-child {
-      width: 130px;
-      left: 560px;
-      order: 1;
-    }
-  }
+.footer_section p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    padding-bottom:0px;
+    margin-bottom:8px;
+    font: 1rem sans-serif;
+    color:#fff;
 }
 
-.order_button {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 10px 15px;
-  position: absolute;
-  width: 186px;
-  height: 52px;
-  left: 16px;
-  top: 0px;
-  background: #6F4E37;
-  border: 1px solid #3C2A1E;
-  box-sizing: border-box;
-  border-radius: 5px;
-
-  p {
-    position: static;
-    width: 156px;
-    height: 32px;
-    left: 15px;
-    top: 10px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-  }
+.footer_bottom {
+	border-top: 1px solid #6F4E37;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 930px;
+    height: 2rem;
 }
+
+ .footer_bottom p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color:#fff;
+  }

@@ -1,7 +1,7 @@
 .main_content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: [row1-start] 64px% [row1-end] auto [third-line] 102px [last-line];
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     position: relative;
@@ -17,6 +17,14 @@
 }
 
 .order {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-row-start: 2fr;
+
+/*
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -33,7 +41,7 @@
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
-
+*/
  }
  /*
 .order form{
@@ -83,8 +91,15 @@ input {
 }
 
 .basket {
-  width: 50%;
-  /*display: flex;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  grid-row-start: 2fr;
+  grid-column-start: 2fr;
+   /*width: 50%;
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   padding: 0px;

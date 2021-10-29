@@ -7,11 +7,10 @@ $max-width: 1400px;
   background: $accent-color;
   width: 100%;
 
-  h2{
+  .indextitle{
     font-weight: normal;
     font-size: 36px;
     line-height: 48px;
-    //margin: 0 255px 0 255px;
     margin: 15px 15px 0 15px;
 
     @media screen and (min-width: 700px) {
@@ -20,8 +19,13 @@ $max-width: 1400px;
       bottom: -30px;
     }
   }
+  .producttitle{
+    margin: 30px 0 0 15px;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+  }
 }
-
 
 .product {
   box-sizing: border-box;
@@ -41,7 +45,6 @@ $max-width: 1400px;
 
   img {
     object-fit: cover;
-    //height: 169px;
     width: 100%;
     min-height: 169px;
     max-height: 169px;
@@ -99,7 +102,6 @@ $max-width: 1400px;
     margin: 0;
   }
 }
-
 
 .products {
   padding: 38px 15px 60px;

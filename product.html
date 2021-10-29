@@ -1,76 +1,80 @@
 <!DOCTYPE html>
 <html lang="is">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Tæknibúðin - Vara</title>
-    <link rel="stylesheet" href="../styles.css" />
-    <link rel="stylesheet" href="../grid.css" />
-  </head>
 
-  <body>
-    <div class="wrapper">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="./icons/Logo.svg">
-          <h1><a href="./index.html">Tæknibúðin</a></h1>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
-          <img src="./icons/search.svg">
-        </div>
-        <ul class="nav">
-          <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          <div class="menu">
-            <li class="nav__item">
-              <a href="./catalog.html" class="nav__link">Nýjar vörur</a>
-            </li>
-            <li class="nav__item">
-              <a href="./catalog.html" class="nav__link">Tilboðs vörur</a>
-            </li>
-            <li class="nav__item">
-              <a href="./catalog.html" class="nav__link">Allar vörur</a>
-            </li>
-            <div class="menu-search">
-              <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
-              <img src="./icons/search.svg">
-            </div>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tæknibúðin - Vara</title>
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="stylesheet" href="../grid.css" />
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="./icons/Logo.svg">
+        <h1><a href="./index.html">Tæknibúðin</a></h1>
+      </div>
+      <div class="search">
+        <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+        <img src="./icons/search.svg">
+      </div>
+      <ul class="nav">
+        <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li class="nav__item">
+            <a href="./catalog.html" class="nav__link">Nýjar vörur</a>
+          </li>
+          <li class="nav__item">
+            <a href="./catalog.html" class="nav__link">Tilboðs vörur</a>
+          </li>
+          <li class="nav__item">
+            <a href="./catalog.html" class="nav__link">Allar vörur</a>
+          </li>
+          <div class="menu-search">
+            <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+            <img src="./icons/search.svg">
           </div>
-        </ul>
-        <div class="cart">
-          <a href="./order.html"><img src="./icons/cart.svg"></a>
-          <div class="count">1</div>
         </div>
-      </nav>
+      </ul>
+      <div class="cart">
+        <a href="./order.html"><img src="./icons/cart.svg"></a>
+        <div class="count">1</div>
+      </div>
+    </nav>
 
-      <main>
-        <div class="product-details">
-          <section class="product-details__section">
-            <div class="image">
-              <img class="image__img" src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="" />
-            </div>
-          </section>
-          <section class="product-details__section">
-            <h1>Tæknilegt móðurborð</h1>
-            <ul>
-              <li>Nýtt</li>
-              <li>Takmarkað magn</li>
-            </ul>
-            <p>
-              Afskaplega gott, tæknilegt, og traust móðurborð. Passar vel í allar
-              gerðir tölva sem taka við tæknilegum móðurborðum. Nam lobortis tellus
-              tellus, vulputate pellentesque mi tempus non. Nunc luctus ac ligula id
-              fringilla. Aliquam id lacus id ipsum suscipit pellentesque et a ante.
-              Nullam vitae nisi pharetra, rhoncus dolor eu, condimentum mauris. Nunc
-              gravida id nulla a accumsan. Duis id sapien ac risus luctus porta nec
-              sed ante. Nam quis ex quis dolor auctor vehicula. </p>
-            <p>189.000 kr.</p>
-            <button>Setja í körfu</button>
-          </section>
-        </div>
-        <div class="product-description">
-          <section class="product-description__section">
+    <main>
+      <div class="product-details">
+        <section class="product-details__section">
+          <div class="image">
+            <img class="image__img" src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="" />
+          </div>
+        </section>
+        <section class="product-details__section">
+          <h1>Tæknilegt móðurborð</h1>
+          <div class="tags">
+            <p class="tag">Nýtt</p>
+            <p class="tag">Takmarkað magn</p>
+          </div>
+          <p class="product-description-text">
+            Afskaplega gott, tæknilegt, og traust móðurborð. Passar vel í allar
+            gerðir tölva sem taka við tæknilegum móðurborðum. Nam lobortis tellus
+            tellus, vulputate pellentesque mi tempus non. Nunc luctus ac ligula id
+            fringilla. Aliquam id lacus id ipsum suscipit pellentesque et a ante.
+            Nullam vitae nisi pharetra, rhoncus dolor eu, condimentum mauris. Nunc
+            gravida id nulla a accumsan. Duis id sapien ac risus luctus porta nec
+            sed ante. Nam quis ex quis dolor auctor vehicula. </p>
+          <div class="product-details-price">
+            <strong>189.000 kr.</strong>
+            <button class="add-to-cart">Setja í körfu</button>
+          </div>
+        </section>
+      </div>
+      <div class="product-description">
+        <section class="product-description__section">
+          <div class="product-description-container">
             <h2>Eiginleikar</h2>
             <h3>Kubbasett</h3>
             <p>
@@ -91,95 +95,71 @@
               accumsan. Phasellus nec dictum tellus. Nulla vulputate, felis nec egestas pretium, libero sapien rutrum
               dui.
             </p>
-          </section>
-        </div>
-        <!--<div class="related-products">
-          <section class="related-products__section">
-            <div class="image">
-              <img class="image__img" src="images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="" />
-            </div>
-            <h3>Vinalegur vinnuróbot</h3>
+          </div>
+        </section>
+      </div>
+      <div class="productcontainer">
+        <div class="products">
+          <div class="product">
+            <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+            <h4>Vinalegur vinnuróbot</h4>
             <div class="tags">
               <p class="tag">Nýtt</p>
               <p class="tag">Ekki fyrir börn</p>
             </div>
-            <p>189.000 kr.</p>
-            <button class="add-to-cart">Setja í körfu</button>
-          </section>
-          <section class="related-products__section">
-            <div class="image">
-              <img class="image__img" src="images/markus-spiske-iar-afB0QQw-unsplash 1.jpg" alt="" />
-            </div>
-            <h3>Matrixið</h3>
+            <p class="price">1.499.990 kr.</p>
+            <a href="./product.html">SETJA Í KÖRFU</a>
+          </div>
+
+          <div class="product">
+            <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
+            <h4>Matrixið</h4>
             <div class="tags">
               <p class="tag">Nýtt</p>
               <p class="tag">Ekki fyrir róbóta</p>
             </div>
-            <p>299.999.999.499.990 kr.</p>
-            <button class="add-to-cart">Setja í körfu</button>
-          </section>
-        </div>-->
-        <div class="productcontainer">
-          <div class="products">
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
-              </div>
-              <p class="price">1.499.990 kr.</p>
-              <a href="./product.html">SETJA Í KÖRFU</a>
-            </div>
-
-            <div class="product">
-              <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
-              <h4>Tæknilegt móðurborð</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Takmarkað magn</p>
-              </div>
-              <p class="price">189.000 kr.</p>
-              <a href="./product.html">SETJA Í KÖRFU</a>
-            </div>
+            <p class="price">299.999.999.499.990 kr.</p>
+            <a href="./product.html">SETJA Í KÖRFU</a>
           </div>
         </div>
+      </div>
 
-      </main>
-      <footer>
-        <div>
-          <section>
-            <h3>Opnunartími</h3>
-            <div class="line"></div>
-            <p>Opið alla virka daga frá 9:00-18:00<br>
-              Opið á laugardögum frá 12:00-16:00<br>
-              Lokað á sunnudögum
-            </p>
-          </section>
-      
-          <section>
-            <h3>Hafðu samband</h3>
-            <div class="line"></div>
-            <p>Skiptiborð: 234-4568<br>
-              Tölvupóstur: thjonusta@example.org
-            </p>
-          </section>
-      
-          <section>
-            <h3>Annað</h3>
-            <div class="line"></div>
-            <p>Rekja sendingu<br>
-              Skilaréttur<br>
-              Um okkur<br>
-              Störf
-            </p>
-          </section>
-      
-        </div>
-        <div class="bottom-lina"></div>
-        <p class="bottom">@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
-    
-      </footer>
-    </div>
-  </body>
+    </main>
+    <footer>
+      <div>
+        <section>
+          <h3>Opnunartími</h3>
+          <div class="line"></div>
+          <p>Opið alla virka daga frá 9:00-18:00<br>
+            Opið á laugardögum frá 12:00-16:00<br>
+            Lokað á sunnudögum
+          </p>
+        </section>
+
+        <section>
+          <h3>Hafðu samband</h3>
+          <div class="line"></div>
+          <p>Skiptiborð: 234-4568<br>
+            Tölvupóstur: thjonusta@example.org
+          </p>
+        </section>
+
+        <section>
+          <h3>Annað</h3>
+          <div class="line"></div>
+          <p>Rekja sendingu<br>
+            Skilaréttur<br>
+            Um okkur<br>
+            Störf
+          </p>
+        </section>
+
+      </div>
+      <div class="bottom-lina"></div>
+      <p class="bottom">@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
+
+    </footer>
+  </div>
+</body>
+
 </html>

@@ -29,18 +29,38 @@
   }
 }
 
-.add-to-cart {
-  align-items: center;
-  background: #fefefe;
-  border: 1px solid #6f4e37;
-  border-radius: 5px;
-  box-sizing: border-box;
-  color: #3c2a1e;
-  cursor: pointer;
-  font-size: 14px;
-  font-weight: bold;
-  line-height: 24px;
-  margin: 10px 0;
-  padding: 10px 15px;
-  text-align: center;
+.product-details-price {
+  display: flex;
+  margin-top: 1em;
+
+  strong {
+    align-self: center;
+    float: left;
+    width: 50%;
+  }
+
+  .add-to-cart {
+    align-items: center;
+    background: #fefefe;
+    border: 1px solid #6f4e37;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #3c2a1e;
+    cursor: pointer;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+    min-width: max-content;
+    padding: 10px 15px;
+    text-align: center;
+    width: 50%;
+  }
+}
+
+.product-description-container {
+  margin-bottom: 2em;
+
+  h3 {
+    margin-top: 1em;
+  }
 }

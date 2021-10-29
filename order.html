@@ -8,12 +8,42 @@
     <link rel="stylesheet" href="../styles.css" />
     <link rel="stylesheet" href="../grid.css" />
   </head>
+
   <body>
-    <nav>
-
-    </nav>
-
     <div class="wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./icons/Logo.svg">
+          <h1><a href="./index.html">Tæknibúðin</a></h1>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+          <img src="./icons/search.svg">
+        </div>
+        <ul class="nav">
+          <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li class="nav__item">
+              <a href="./catalog.html" class="nav__link">Nýjar vörur</a>
+            </li>
+            <li class="nav__item">
+              <a href="./catalog.html" class="nav__link">Tilboðs vörur</a>
+            </li>
+            <li class="nav__item">
+              <a href="./catalog.html" class="nav__link">Allar vörur</a>
+            </li>
+            <div class="menu-search">
+              <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+              <img src="./icons/search.svg">
+            </div>
+          </div>
+        </ul>
+        <div class="cart">
+          <a href="./order.html"><img src="./icons/cart.svg"></a>
+          <div class="count">1</div>
+        </div>
+      </nav>
 
       <main>
 
@@ -99,39 +129,40 @@
       </main>
     </div>
 
-  <footer class="footer">
-    <section class="footer_section">
-      <ul>
-        <h3>Opnunartími</h3>
-        <p>Opið alla virka daga frá 9:00-18:00</p>
-        <p>Opið á laugardögum frá 12:00-16:00</p>
-        <p>Lokað á sunnudögum</p>
-      </ul>
-    </section>
-
-    <section class="footer_section">
-      <ul>
-        <h3>Hafðu samband</h3>
-        <p>Skiptiborð: 234-4568</p>
-        <p>Tölvupóstur: thjonusta@exaple.org</p>
-      </ul>
-    </section>
-
-    <section class="footer_section">
-      <ul>
-        <h3>Annað</h3>
-        <p>Rekja sendingu</p>
-        <p>Skilaréttur</p>
-        <p>Um okkur</p>
-        <p>Störf</p>
-      </ul>
-    </section>
-
-    <section class="footer_bottom">
-      <p>@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
-    </section>
-
-  </footer>
+    <footer>
+      <div>
+        <section>
+          <h3>Opnunartími</h3>
+          <div class="line"></div>
+          <p>Opið alla virka daga frá 9:00-18:00<br>
+            Opið á laugardögum frá 12:00-16:00<br>
+            Lokað á sunnudögum
+          </p>
+        </section>
+    
+        <section>
+          <h3>Hafðu samband</h3>
+          <div class="line"></div>
+          <p>Skiptiborð: 234-4568<br>
+            Tölvupóstur: thjonusta@example.org
+          </p>
+        </section>
+    
+        <section>
+          <h3>Annað</h3>
+          <div class="line"></div>
+          <p>Rekja sendingu<br>
+            Skilaréttur<br>
+            Um okkur<br>
+            Störf
+          </p>
+        </section>
+    
+      </div>
+      <div class="bottom-lina"></div>
+      <p class="bottom">@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
+  
+    </footer>
 
   </body>
 </html>

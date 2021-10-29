@@ -3,6 +3,7 @@ $accent-color: #e1cec2;
 $max-width: 1400px;
 
 .productcontainer{
+    position: relative;
     background: $accent-color;
     width: 100%;
 
@@ -19,6 +20,15 @@ $max-width: 1400px;
             bottom: -30px;
         }
       }
+}
+.productcontainer::before{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(45deg, #654ea3, #eaafc8); 	
+    transform: skewY(-11deg);
 }
 
 

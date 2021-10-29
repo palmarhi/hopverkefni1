@@ -4,20 +4,20 @@ $max-width: 1400px; // taka út seinna
 //Nýr footer
 
 footer {
-  background-color: #3C2A1E;
+  background-color: #3c2a1e;
   height: 527px;
-  color: white;
+  color: #fff;
 
-  @media screen and (min-width: 1000px) {  
+  @media screen and (min-width: 1000px) { 
     height: 270px;
   }
 
-  .bottom{
+  .bottom {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
   }
-  .bottom-lina{
+  .bottom-lina {
     border: 1px solid #6F4E37;
     max-width: 100%;
     

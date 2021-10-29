@@ -31,3 +31,9 @@ Búið er til _production build_ Með `npm run build` er búið til _production 
 Verkefninu er skipt þannig upp í möppur að allar html skrár eru í rót. CSS/Sass skrár eru í `styles` möppu nema styles.scss sem er í rót. Í styles möppunni eru scss skrár fyrir hverja síðu en þar eru einnig scss skrár fyrir sameiginlega hluti eins og _header, footer, navigation og products_.
 
 Myndir eru geymdar í `images` möppu og öll icon sem notuð eru á vefsíðum eru í `icons` möppu.
+
+## Vefsíður
+
+[GitHub](https://github.com/palmarhi/hopverkefni1)
+[Netlify](https://festive-hoover-5471f6.netlify.app)
+

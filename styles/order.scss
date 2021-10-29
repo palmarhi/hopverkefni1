@@ -18,8 +18,8 @@
 
 .order {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-row-start: 2;
@@ -92,8 +92,8 @@ input {
 
 .basket {
   display: grid;
-  grid-template-columns: 1;
-  grid-template-rows: 1;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
   grid-row-start: 2;

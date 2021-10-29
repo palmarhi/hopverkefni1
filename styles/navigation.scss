@@ -11,6 +11,7 @@ li {
   align-items: center;
   display: flex;
   justify-content: space-between;
+  height: 60px;
 }
 
 .menu {
@@ -49,11 +50,13 @@ li {
   img {
     height: 30px;
     width: 30px;
+    position: relative;
+    top: 4px;
   }
 
   h1 {
     display: inline-block;
-    font-family: 'Lora';
+    font-family: 'Lora', serif;
     font-size: 40px;
     font-weight: 700;
     line-height: 40px;
@@ -153,7 +156,8 @@ li {
   }
 
   .cart {
-    display: none;
+    position: absolute;
+    right: 50px;
   }
 }
 

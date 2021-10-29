@@ -29,3 +29,6 @@ styles.css.map
 # Mögulegar þýddar skrár fyrir production build
 build/
 dist/
+
+.fake
+.ionide

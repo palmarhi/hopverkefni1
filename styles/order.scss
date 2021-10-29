@@ -69,7 +69,7 @@ input {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 32px;
-}}
+}
 
 .total {
   display: flex;
@@ -141,10 +141,11 @@ input {
   }
 
 }
-& {
-	&:last-child {
-		width: 130px;
-		left: 560px;
-		order: 1;
-	}
-}
+// todo skoða
+// & {
+// 	&:last-child {
+// 		width: 130px;
+// 		left: 560px;
+// 		order: 1;
+// 	}
+// }

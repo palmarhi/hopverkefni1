@@ -1,3 +1,74 @@
+$max-width: 1400px; // taka út seinna
+
+
+//Nýr footer
+
+footer {
+  background-color: #3C2A1E;
+  height: 527px;
+  color: white;
+
+  @media screen and (min-width: 1000px) {  
+    height: 270px;
+  }
+
+  .bottom{
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+  }
+  .bottom-lina{
+    border: 1px solid #6F4E37;
+    max-width: 100%;
+    
+    @media screen and (min-width: 1000px) {  
+      max-width: 930px;
+    }
+  }
+}
+
+footer div {
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 15px;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 30px;
+
+  @media screen and (min-width: 700px) {  
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+footer div section{
+  h3 {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 48px;
+    margin: 15px 0 0 0;
+
+    @media screen and (min-width: 700px) {  
+      margin: 53px 0 0 0;
+    }
+  }
+  p{
+    margin: 10px 0 15px 0;
+    font-size: 16px;
+    line-height: 24px;
+    @media screen and (min-width: 700px) {  
+      margin: 10px 0 23px 0;
+    }
+    //height: 127px;
+  }
+  .line{
+    border: 1px solid #E1CEC2;
+  }
+}
+
+
+
+/*
 .footer {
   //min-height: 16.875rem;
 
@@ -55,3 +126,4 @@
     text-align: center;
     color:#fff;
   }
+*/

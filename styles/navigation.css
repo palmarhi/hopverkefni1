@@ -1,19 +1,19 @@
 nav {
-  height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
 
 nav a {
+  color: #000;
   text-decoration: none;
-  color: #000000;
 }
 
 nav .search {
@@ -21,20 +21,20 @@ nav .search {
 }
 
 nav .search input {
-  width: 450px;
+  border: 1px solid #000;
+  border-radius: 5px;
   height: 40px;
   padding: 6px;
-  border: 1px solid #000000;
-  border-radius: 5px;
+  width: 450px;
 }
 
 nav .search img {
-  position: relative;
   cursor: pointer;
-  width: 20px;
   height: 20px;
+  position: relative;
   right: 32px;
   top: 5px;
+  width: 20px;
 }
 
 nav ul {
@@ -49,28 +49,28 @@ nav ul li {
 nav .cart img {
   cursor: pointer;
   height: 30px;
-  width: 30px;
   overflow: auto;
   position: relative;
   top: 10px;
+  width: 30px;
 }
 
 nav .cart .count {
-  width: 20px;
-  height: 20px;
-  position: relative;
-  background: #6F4E37;
+  background: #6f4e37;
   border-radius: 50%;
-  text-align: center;
+  color: #fefefe;
+  height: 20px;
   line-height: 20px;
-  color: #FEFEFE;
+  position: relative;
   right: 5px;
+  text-align: center;
   top: -7px;
+  width: 20px;
 }
 
 .logo {
-  width: auto;
   display: inline-block;
+  width: auto;
 }
 
 .logo img {
@@ -81,8 +81,8 @@ nav .cart .count {
 .logo h1 {
   display: inline-block;
   font-family: 'Lora';
-  font-weight: 700;
   font-size: 40px;
+  font-weight: 700;
   line-height: 40px;
   margin: 0 0 0 10px;
 }

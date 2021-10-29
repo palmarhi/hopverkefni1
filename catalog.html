@@ -12,8 +12,41 @@
   </head>
   <body>
     <div class="wrapper">
+      <nav class="navbar">
+        <div class="logo">
+          <img src="./icons/Logo.svg">
+          <h1><a href="./index.html">Tæknibúðin</a></h1>
+        </div>
+        <div class="search">
+          <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+          <img src="./icons/search.svg">
+        </div>
+        <ul class="nav">
+          <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
+          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+          <div class="menu">
+            <li class="nav__item">
+              <a href="#foo" class="nav__link">Nýjar vörur</a>
+            </li>
+            <li class="nav__item">
+              <a href="#bar" class="nav__link">Tilboðs vörur</a>
+            </li>
+            <li class="nav__item">
+              <a href="#baz" class="nav__link">Allar vörur</a>
+            </li>
+            <div class="menu-search">
+              <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+              <img src="./icons/search.svg">
+            </div>
+          </div>
+        </ul>
+        <div class="cart">
+          <img src="./icons/cart.svg">
+          <div class="count">1</div>
+        </div>
+      </nav>
       <header class="header">
-        <nav>
+        <!--<nav>
           <div class="logo"><img src="./icons/Logo.svg"><h1><a href="./index.html">Tæknibúðin</a></h1></div>
           <div class="search">
             <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
@@ -28,7 +61,7 @@
             <img src="./icons/cart.svg">
             <div class="count">1</div>
          </div>
-        </nav>
+        </nav>-->
         <h1 class="heading">Nýjar vörur</h1>
         <h2>Raða eftir:</h2>
         <div class="order">
@@ -175,8 +208,43 @@
           </div>
         </div>
       </main>
-      <footer>
+      
+      <!--<footer>
         test
+      </footer>-->
+      <footer>
+        <div>
+          <section>
+            <h3>Opnunartími</h3>
+            <div class="line"></div>
+            <p>Opið alla virka daga frá 9:00-18:00<br>
+              Opið á laugardögum frá 12:00-16:00<br>
+              Lokað á sunnudögum
+            </p>
+          </section>
+      
+          <section>
+            <h3>Hafðu samband</h3>
+            <div class="line"></div>
+            <p>Skiptiborð: 234-4568<br>
+              Tölvupóstur: thjonusta@example.org
+            </p>
+          </section>
+      
+          <section>
+            <h3>Annað</h3>
+            <div class="line"></div>
+            <p>Rekja sendingu<br>
+              Skilaréttur<br>
+              Um okkur<br>
+              Störf
+            </p>
+          </section>
+      
+        </div>
+        <div class="bottom-lina"></div>
+        <p class="bottom">@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
+    
       </footer>
     </div>
   </body>

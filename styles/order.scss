@@ -15,7 +15,7 @@
 .main_content {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: [row1-start] 64px% [row1-end] auto [third-line] 102px [last-line];
+	grid-template-rows: [row1-start] 64px [row1-end] auto [third-line] 102px [last-line];
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 	position: relative;
@@ -69,7 +69,7 @@ input {
 	font-weight: 400;
 	font-size: 22px;
 	line-height: 32px;
-}
+}}
 
 .total {
   display: flex;

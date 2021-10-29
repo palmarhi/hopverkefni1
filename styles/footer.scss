@@ -16,6 +16,7 @@ footer {
     font-size: 14px;
     line-height: 16px;
     text-align: center;
+    margin: 12px;
   }
 
   .bottom-lina {
@@ -49,7 +50,7 @@ footer div section {
     margin: 15px 0;
 
     @media screen and (min-width: 700px) {
-      margin: 53px 0;
+      margin: 53px 0 0;
     }
   }
 

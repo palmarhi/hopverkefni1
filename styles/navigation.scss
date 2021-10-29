@@ -1,4 +1,164 @@
-nav {
+li {
+  list-style: none;
+  font-size: 16px;
+
+  @media (max-width: 700px) {
+    font-size: 60px;
+  }
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  gap: 1em;
+}
+
+.nav__item a {
+  white-space: nowrap;
+}
+
+.nav input {
+  border: 1px solid #000;
+  border-radius: 5px;
+  height: 40px;
+  outline: none;
+  padding: 6px;
+  width: 100%;
+}
+
+.checkbox_toggle[type=checkbox] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.logo {
+  display: flex;
+  margin-right: 1em;
+  width: auto;
+
+  img {
+    height: 30px;
+    width: 30px;
+  }
+
+  h1 {
+    display: inline-block;
+    font-family: 'Lora';
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    margin: 0 0 0 10px;
+  }
+}
+
+.search,
+.menu-search {
+  display: flex;
+  position: relative;
+  width: 450px;
+
+  @media (max-width: 700px) {
+    width: 100%;
+  }
+
+  input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    height: 40px;
+    outline: none;
+    padding: 6px;
+    width: 100%;
+  }
+
+  img {
+    cursor: pointer;
+    height: 20px;
+    position: relative;
+    right: 32px;
+    top: 10px;
+    width: 20px;
+  }
+}
+
+.menu-search {
+  display: none;
+  margin: auto 1em;
+}
+
+.cart {
+  margin-left: 1em;
+
+  img {
+    cursor: pointer;
+    height: 30px;
+    overflow: auto;
+    position: relative;
+    top: 10px;
+    width: 30px;
+  }
+
+  .count {
+    background: #6f4e37;
+    border-radius: 50%;
+    color: #fefefe;
+    height: 20px;
+    line-height: 20px;
+    position: relative;
+    right: 5px;
+    text-align: center;
+    top: -7px;
+    width: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .menu {
+    background-color: #fff;
+    display: none;
+    left: 0;
+    padding: 16px 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+  }
+
+  .menu li + li {
+    margin-top: 12px;
+  }
+
+  .checkbox_toggle[type=checkbox]:checked ~ .menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu-search {
+    display: flex;
+  }
+
+  .search {
+    display: none;
+  }
+
+  .cart {
+    display: none;
+  }
+}
+
+
+/*nav {
   align-items: center;
   display: flex;
   height: 60px;
@@ -82,3 +242,4 @@ nav {
     margin: 0 0 0 10px;
   }
 }
+*/

@@ -296,53 +296,9 @@ footer div section .line {
     color:#fff;
   }
 */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-html {
-  font-family: "Lato";
-  font-style: normal;
-  margin: 0;
-}
-
-body {
-  margin: 0;
-}
-
-h1 {
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 80px;
-  margin: 30px 0px 40px;
-}
-
-@media screen and (min-width: 700px) {
-  h1 {
-    font-size: 60px;
-  }
-}
-
-h2 {
-  font-weight: normal;
-  font-size: 32px;
-  line-height: 48px;
-  margin: 0px;
-}
-
-.order {
-  margin: 5px 0 41.5px;
-}
-
-.order button {
+.productcontainer {
   background: #e1cec2;
-  border-radius: 5px;
-  border: none;
-  font-size: 20px;
-  line-height: 32px;
-  cursor: pointer;
-  margin: 0 5px 5px 0;
+  width: 100%;
 }
 
 .product {
@@ -435,6 +391,8 @@ h2 {
       grid-template-columns: 1fr;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
+  max-width: 1400px;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 700px) {
@@ -451,13 +409,56 @@ h2 {
   }
 }
 
-main {
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-family: "Lato";
+  font-style: normal;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-weight: normal;
+  font-size: 50px;
+  line-height: 80px;
+  margin: 30px 0px 40px;
+}
+
+@media screen and (min-width: 700px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 48px;
+  margin: 0px;
+}
+
+.order {
+  margin: 5px 0 41.5px;
+}
+
+.order button {
   background: #e1cec2;
-  width: 100%;
+  border-radius: 5px;
+  border: none;
+  font-size: 20px;
+  line-height: 32px;
+  cursor: pointer;
+  margin: 0 5px 5px 0;
 }
 
 nav,
-.products,
 header {
   max-width: 1400px;
   margin: 0 auto;

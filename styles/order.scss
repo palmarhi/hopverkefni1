@@ -1,219 +1,86 @@
-/*
-.order form{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-
-  position: static;
-  width: 690px;
-  height: 464px;
-  left: 15px;
-  top: 0px;
-
-}*/
-
-/*
-.main_content {
+.pontunarform {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto 1fr;
   grid-column-gap: 30px;
-  grid-row-gap: 0px;
-	position: relative;
-	width: 1440px;
-	height: 1069px;
-	background: #FFFFFF;
+  grid-template-columns: 1fr 1fr;
+
+  button {
+    background: #6f4e37;
+    border: 1px solid #3c2a1e;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 20px;
+    line-height: 32px;
+    margin: 50px 0;
+    padding: 10px 15px;
+  }
+
+  .t1 {
+    margin: 0 0 10px;
+  }
+
+  .t2 {
+    margin: 30px 0 10px;
+  }
 }
-*/
-.main_content {
-	display: grid;
-  grid-template-columns: 1 fr;
-	grid-template-rows: [row1-start] 64px [row1-end] auto [third-line] 102px [last-line];
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
 
-
-	//position: relative;
-	width: 100%;
-	background: #FFFFFF;
-}
-
-.order_header {
+.userupplysingar {
   display: grid;
-  max-width: 1440px;
-  //grid-column-start: 1;
-  //grid-row-start: 1;
-}
-
-.order {
-    position: relative;
-    width: 100%;
-/*
-    h2{
-        font-weight: normal;
-        font-size: 36px;
-        line-height: 48px;
-        //margin: 0 255px 0 255px;
-        margin: 15px 15px 0 15px;
-
-        @media screen and (min-width: 700px) {
-            left: 10%;
-            position: relative;
-            bottom: -30px;
-        }
-      }
-}
-	display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-row-start: 2;
-  grid-column-start: 1;
-  -ms-grid-column-span: 1;*/
-}
-
-.order form {
-	display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 15px;
   grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-  grid-row-start: 1;
-	width: 50%;
-
 }
-
-.left {
-	display: grid;
-  grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-  grid-row-start: 1;
-	width: 50%;
-}
-.right {
-	display: grid;
-  grid-template-columns: 1fr 1fr;
-	grid-template-rows: 1fr 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-  grid-row-start: 2;
-	width: 50%;
-}
-
-.input_field {
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	padding: 0px;
-	position: static;
-	width: 690px;
-	height: 17px;
-	left: 0px;
-}
-
 
 input {
-	display: flex;
-	flex-direction: row;
-	align-items: flex-start;
-	padding: 0px;
-	position: static;
-	width: 690px;
-	height: 159px;
-	left: 0px;
-	top: 58px;
-}
-.basket {
-	display: grid;
-	grid-template-columns: 1fr;
-	grid-template-rows: 1fr;
-	grid-column-gap: 0px;
-	grid-row-gap: 0px;
-	grid-row-start: 2;
-	grid-column-start: 2;
-	p { font-family: 'Lato', sans-serif;
-	font-weight: 400;
-	font-size: 22px;
-	line-height: 32px;
+  border: 1px solid #000;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 40px;
+  width: 100%;
 }
 
-.total {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  position: static;
-  width: 690px;
-  height: 32px;
-  left: 0px;
-  top: 230px;
-  }
-
-.total	p {
-  position: static;
-  font-weight: 700;
-  height: 32px;
-  top: 0px;
-  font-family: Lato;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 22px;
+label {
+  font-size: 20px;
   line-height: 32px;
-  color: #000000;
-  flex: none;
-
-  }
-	.total:first-child {
-    width: 76px;
-		left: 0px;
-		order: 0;
-	}
-
-  .order_button {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
-    grid-row-start: inherit;
-    padding: 10px 15px;
-    width: 186px;
-    height: 52px;
-    left: 16px;
-    top: 0px;
-    background: #6F4E37;
-    border: 1px solid #3C2A1E;
-    box-sizing: border-box;
-    border-radius: 5px;
-  }
-
-  .order_button p { position: static;
-    width: 156px;
-    height: 32px;
-    left: 15px;
-    top: 10px;
-    font-family: Lato;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    position: static;
-    line-height: 32px;
-    color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
-    margin: 0px 10px;
-  }
-
 }
-// todo skoða
-// & {
-// 	&:last-child {
-// 		width: 130px;
-// 		left: 560px;
-// 		order: 1;
-// 	}
-// }
+
+.productitem {
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+
+  img {
+    height: 85px;
+    object-fit: cover;
+    width: 85px;
+  }
+
+  h3,
+  p {
+    font-size: 22px;
+    font-weight: normal;
+    line-height: 32px;
+    margin-left: 32px;
+  }
+}
+
+.orderline {
+  border: 1px solid #e1cec2;
+  margin: 14px 0;
+}
+
+.samtals {
+  display: flex;
+  justify-content: flex-start;
+
+  h3,
+  p {
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 32px;
+  }
+}
+
+.productitem:last-child {
+  margin-left: auto;
+}

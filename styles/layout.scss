@@ -63,104 +63,68 @@ main {
 
 //Index sections
 
-.indexsection{
+.indexsection {
   display: grid;
-  grid-template-columns: 1fr;
   grid-column-gap: 30px;
-
+  grid-template-columns: 1fr;
   margin: 20px;
-
 
   @media screen and (min-width: 700px) {
     grid-template-columns: 1fr 1fr;
-    margin: 120px 0 120px 0;
+    margin: 120px 0;
   }
 
   @media screen and (min-width: 1000px) {
-    margin: 120px 255px 120px 255px;
+    margin: 120px 255px;
   }
 
-  img{
-    width: 100%;
+  img {
     height: 274px;
+    width: 100%;
   }
 
-  .titill{
+  .titill {
     font-size: 36px;
-    line-height: 48px;
     font-weight: normal;
+    line-height: 48px;
   }
-  p{
-    margin: 11px 0 30px 0;
+
+  p {
+    margin: 11px 0 30px;
 
     @media screen and (min-width: 700px) {
-      margin: 30px 0 30px 0;
+      margin: 30px 0;
     }
   }
+
   a {
-    padding: 10px 15px;
-
-    background: #6F4E37;
-    border: 1px solid #3C2A1E;
+    background: #6f4e37;
+    border: 1px solid #3c2a1e;
     border-radius: 5px;
-
+    color: #fff;
     font-size: 14px;
     line-height: 24px;
-
-    color: #FFFFFF;
+    padding: 10px 15px;
   }
 }
 
-.diagonal{
-  position: absolute;
-  width: 100%;
-  height: 110%;
-  top:-5%;
-  transform: skewY(-1.5deg);
-  z-index: -1;
+.diagonal {
   display: none;
+  height: 110%;
+  position: absolute;
+  top: -5%;
+  transform: skewY(-1.5deg);
+  width: 100%;
+  z-index: -1;
 
   @media screen and (min-width: 700px) {
     display: block;
   }
 
-  &.d_accent{
+  &.d_accent {
     background-color: $accent-color;
   }
   /*&.d_white{
     background-color: #fff;
   }*/
 }
-
-
-
-/*
-.related-products {
-  @media (min-width: 700px) {
-    display: grid;
-    gap: var(--gutter);
-    grid-template-columns: repeat(12, 1fr);
-  }
-
-  background: $accent-color;
-  padding: 38px 0 60px;
-}
-
-.related-products__section {
-  @media (min-width: 700px) {
-    grid-column: span 4;
-  }
-  @media (min-width: 1000px) {
-    grid-column: span 3;
-  }
-
-  background: #fff;
-  border-radius: 5px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  height: 360px;
-  justify-content: space-between;
-  max-width: 330px;
-  padding: 15px;
-}*/

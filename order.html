@@ -45,129 +45,90 @@
         </div>
       </nav>
 
+      <header class="catalogheader">
+        <h1 class="heading">Pöntun</h1>
+      </header>
+
       <main>
-
-      <div class="main_content">
-        <div><h1 class="oder_header">Pöntun</h1></div>
-
-      <div class="order">
-         <form action="./" method="get">
-            <div class="input_field">
-              <div><legend><h2>Kaupandi</h2></legend>
-          <div class="left">
-                  <div>
-                    <label for="nafn">Nafn</label>
-                    <input type="text" name="nafn" id="nafn">
-                  </div>
-                  <div>
-                    <label for="kennitala">Kennitala</label>
-                    <input
-                      type="text"
-                      name="kennitala"
-                      id="kennitala"
-                      placeholder="000000-0000">
-                  </div>
-                </div>
-              </div>
-
-            <div class="right">
-              <div>
-                <label for="simi">Sími</label>
-                <input type="tel" name="simi" id="simi" required aria-describedby="simi-required">
-              </div>
-              <div>
-                <label for="netfang">Netfang</label>
-                <input type="email" name="netfang" id="netfang" required aria-describedby="netfang-required">
-              </div>
-          </div>
-        </div>
-          </div>
-        </div>
-
-            <div class="input_field">
-              <legend><h2>Afhending</h2></legend>
-                <label for="heimili">Heimilisfang</label>
-                <input type="text" name="nafn" id="nafn">
-              <div>
-                <label for="postnumer">Póstnúmer</label>
-                <input
-                  type="number"
-                  name="postnumer"
-                  id="postnumer"
-                  placeholder="000">
-              </div>
-              <div>
-                <label for="stadur">Staður</label>
-                <input type="text" name="stadur">
-              </div>
-              <div>
-                <label for="netfang">Athugasemd</label>
-                <input type="text" name="athugasemd" id="athugasemd">
-              </div>
+        <div class="pontunarform">
+          <div>
+            <h2 class="t1">Kaupandi</h2>
+            <div class="userupplysingar">
+              <label>Nafn<br><input type="text"></label>
+              <label>Kennitala<br><input type="text"></label>
+              <label>Netfang<br><input type="text"></label>
+              <label>Sími<br><input type="text"></label>
             </div>
 
-
-        <div class="basket">
-          <div class="image">
-            <img class="image__small" src="images/alex-knight-2EJCSULRwC8-unsplash.jpg" alt="" />
+            <h2 class="t2">Afhending</h2>
+            <div class="userupplysingar">
+              <label>Heimilisfang<br><input type="text"></label>
+              <label>Póstnúmer<br><input type="text"></label>
+              <label>Staður<br><input type="text"></label>
+              <label>Athugasemd<br><input type="text"></label>
+            </div>
+            <button type="button">SENDA PÖNTUN</button>
           </div>
-            <div><p>Vinalegur vinnuróbot</p></div>
-            <div><p>1.499.990 kr.</p></div>
+          <div class="voruupplysingar">
+            <div class="productitem">
+              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+              <h3>Vinalegur vinnuróbot</h3>
+              <p style="margin-left: auto;">1.499.990 kr.</p>
+            </div>
 
-          <div class="image">
-            <img class="image__small" src="images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg" alt="" />
-          </div>
-            <div><p>Tæknilegt móðurborð</p></div>
-            <div><p>189.000 kr.</p></div>
+            <div class="orderline"></div>
 
-          <div class="total">
-            <p>Samtals</p>
-            <p>1.688.990 kr.</p>
+            <div class="productitem">
+              <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
+              <h3>Tæknilegt móðurborð</h3>
+              <p style="margin-left: auto;">189.000 kr.</p>
+            </div>
+
+            <div class="orderline"></div>
+
+            <div class="samtals">
+              <h3>Samtals</h3>
+              <p style="margin-left: auto;">1.688.990 kr.</p>
+            </div>
           </div>
         </div>
-        </div>
-          <div></div>
-</div>
-
-        <button class="order_button"><p>SENDA PÖNTUN</p></button>
-
       </main>
+
+      <footer>
+        <div>
+          <section>
+            <h3>Opnunartími</h3>
+            <div class="line"></div>
+            <p>Opið alla virka daga frá 9:00-18:00<br>
+              Opið á laugardögum frá 12:00-16:00<br>
+              Lokað á sunnudögum
+            </p>
+          </section>
+  
+          <section>
+            <h3>Hafðu samband</h3>
+            <div class="line"></div>
+            <p>Skiptiborð: 234-4568<br>
+              Tölvupóstur: thjonusta@example.org
+            </p>
+          </section>
+  
+          <section>
+            <h3>Annað</h3>
+            <div class="line"></div>
+            <p>Rekja sendingu<br>
+              Skilaréttur<br>
+              Um okkur<br>
+              Störf
+            </p>
+          </section>
+  
+        </div>
+        <div class="bottom-lina"></div>
+        <p class="bottom">@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
+  
+      </footer>
     </div>
-
-    <footer>
-      <div>
-        <section>
-          <h3>Opnunartími</h3>
-          <div class="line"></div>
-          <p>Opið alla virka daga frá 9:00-18:00<br>
-            Opið á laugardögum frá 12:00-16:00<br>
-            Lokað á sunnudögum
-          </p>
-        </section>
-
-        <section>
-          <h3>Hafðu samband</h3>
-          <div class="line"></div>
-          <p>Skiptiborð: 234-4568<br>
-            Tölvupóstur: thjonusta@example.org
-          </p>
-        </section>
-
-        <section>
-          <h3>Annað</h3>
-          <div class="line"></div>
-          <p>Rekja sendingu<br>
-            Skilaréttur<br>
-            Um okkur<br>
-            Störf
-          </p>
-        </section>
-
-      </div>
-      <div class="bottom-lina"></div>
-      <p class="bottom">@2021 TÆKNIBÚÐIN - Allur réttur áskilinn</p>
-
-    </footer>
 
   </body>
 </html>

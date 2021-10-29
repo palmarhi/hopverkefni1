@@ -9,47 +9,60 @@
   </head>
   <body>
     <div class="wrapper">
-      <nav class="navbar">
-        <div class="logo">
-          <img src="./icons/Logo.svg">
-          <h1><a href="./index.html">Tæknibúðin</a></h1>
-        </div>
-        <div class="search">
-          <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
-          <img src="./icons/search.svg">
-        </div>
-        <ul class="nav">
-          <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
-          <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-          <div class="menu">
-            <li class="nav__item">
-              <a href="./catalog.html" class="nav__link">Nýjar vörur</a>
-            </li>
-            <li class="nav__item">
-              <a href="./catalog.html" class="nav__link">Tilboðs vörur</a>
-            </li>
-            <li class="nav__item">
-              <a href="./catalog.html" class="nav__link">Allar vörur</a>
-            </li>
-            <div class="menu-search">
-              <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
-              <img src="./icons/search.svg">
-            </div>
+      <header class="indexheader">
+        <div class="backgroundimage"></div>
+        <nav class="navbar">
+          <div class="logo">
+            <img src="./icons/Logo.svg">
+            <h1><a href="./index.html">Tæknibúðin</a></h1>
           </div>
-        </ul>
-        <div class="cart">
-          <a href="./order.html"><img src="./icons/cart.svg"></a>
-          <div class="count">1</div>
+          <div class="search">
+            <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+            <img src="./icons/search.svg">
+          </div>
+          <ul class="nav">
+            <input type="checkbox" id="checkbox_toggle" class="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <div class="menu">
+              <li class="nav__item">
+                <a href="./catalog.html" class="nav__link">Nýjar vörur</a>
+              </li>
+              <li class="nav__item">
+                <a href="./catalog.html" class="nav__link">Tilboðs vörur</a>
+              </li>
+              <li class="nav__item">
+                <a href="./catalog.html" class="nav__link">Allar vörur</a>
+              </li>
+              <div class="menu-search">
+                <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
+                <img src="./icons/search.svg">
+              </div>
+            </div>
+          </ul>
+          <div class="cart">
+            <a href="./order.html"><img src="./icons/cart.svg"></a>
+            <div class="count">1</div>
+          </div>
+        </nav>
+        <div>
+          <h1>Tilboðsvika</h1>
+          <span>Keyptu græjunar hjá okkur!</span>
         </div>
-      </nav>
-
-      <header class="header">
-        <h1 class="heading">Vefforritunar&shy;fréttir</h1>
-        <span>Nýjasta nýtt um HTML, CSS, og JavaScript</span>
       </header>
 
       <main>
+
+        <div class="indexsection">
+          <div>
+            <h2 class="titill">Nýjar vörur í <strong>hverri viku</strong></h2>
+            <p>Við fljúgum með nýjar vörur til landsins í hverri viku og bjóðum upp á frábært verð því lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet elementum orci, ac feugiat mauris.</p>
+            <a href="./catalog.html">SKOÐA NÝJAR VÖRUR</a>
+          </div>
+          <img src="./images/voo-qqq-RSYBi_1fhfM-unsplash.jpg">
+        </div>
+
         <div class="productcontainer">
+          <h2>Nokkrar af <strong>nýjustu vörunum</strong> okkar</h2>
           <div class="products">
             <div class="product">
               <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
@@ -70,6 +83,65 @@
                 <p class="tag">Takmarkað magn</p>
               </div>
               <p class="price">189.000 kr.</p>
+              <a href="./product.html">SETJA Í KÖRFU</a>
+            </div>
+
+            <div class="product">
+              <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
+              <h4>Matrixið</h4>
+              <div class="tags">
+                <p class="tag">Nýtt</p>
+                <p class="tag">Ekki fyrir róbóta</p>
+              </div>
+              <p class="price">299.999.999.499.990 kr.</p>
+              <a href="./product.html">SETJA Í KÖRFU</a>
+            </div>
+
+            <div class="product">
+              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+              <h4>Vinalegur vinnuróbot</h4>
+              <div class="tags">
+                <p class="tag">Nýtt</p>
+                <p class="tag">Ekki fyrir börn</p>
+              </div>
+              <p class="price">1.499.990 kr.</p>
+              <a href="./product.html">SETJA Í KÖRFU</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="indexsection">
+          <img src="./images/adrian-sulyok-sczNLg6rrhQ-unsplash.jpg">
+          <div>
+            <h2 class="titill"><strong>Stærsta vöruhús</strong> á Íslandi</h2>
+            <p>Vöruhúsið okkar er það stærsta á Íslandi og með fullt af vörum útum allt risus quis risus mattis sollicitudin. Donec egestas justo orci, in egestas quam molestie id.</p>
+            <a href="./catalog.html">SKOÐA ALLAR VÖRUR</a>
+          </div>
+        </div>
+
+        <!--style="transform: skewY(-2.5deg);"-->
+        <div class="productcontainer">
+          <h2><strong>Nokkur dæmi úr ótrúlegu vöruúrvali okkar</strong></h2>
+          <div class="products">
+            <div class="product">
+              <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
+              <h4>Tæknilegt móðurborð</h4>
+              <div class="tags">
+                <p class="tag">Nýtt</p>
+                <p class="tag">Takmarkað magn</p>
+              </div>
+              <p class="price">189.000 kr.</p>
+              <a href="./product.html">SETJA Í KÖRFU</a>
+            </div>
+
+            <div class="product">
+              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+              <h4>Vinalegur vinnuróbot</h4>
+              <div class="tags">
+                <p class="tag">Nýtt</p>
+                <p class="tag">Ekki fyrir börn</p>
+              </div>
+              <p class="price">1.499.990 kr.</p>
               <a href="./product.html">SETJA Í KÖRFU</a>
             </div>
 

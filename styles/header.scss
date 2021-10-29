@@ -64,3 +64,32 @@ og með media query að ofan farið í 4rem í >=800px
   }
   
 }
+
+.indexheader {
+  background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/randall-bruder-3_I4NVI9d1k-unsplash.jpg");
+  height: 565px;
+  background-size:     cover; 
+  background-position: center bottom; 
+  background-repeat: no-repeat;
+  text-align: center;
+
+  h1{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 80px;
+    line-height: 192px;
+    margin-top: 116px;
+
+    @media screen and (min-width: 700px) {  
+      font-size: 120px;
+    }
+  
+    @media screen and (min-width: 1000px) {  
+      font-size: 160px;
+    }
+  }
+  span{
+    font-size: 36px;
+    line-height: 48px;
+  }
+}

@@ -3,12 +3,9 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Hópverkefni 1 - Vörulisti</title>
-    <link rel="stylesheet" href="./styles/catalog.css"/>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <title>Verkefni 6—Vefforritunarfréttir</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./grid.css" />
   </head>
   <body>
     <div class="wrapper">
@@ -45,26 +42,11 @@
           <div class="count">1</div>
         </div>
       </nav>
-      <header class="header">
-        <!--<nav>
-          <div class="logo"><img src="./icons/Logo.svg"><h1><a href="./index.html">Tæknibúðin</a></h1></div>
-          <div class="search">
-            <input type="text" placeholder="Leita eftir heiti, vörunúmeri, lýsingu o.fl.">
-            <img src="./icons/search.svg">
-          </div>
-          <ul>
-            <li><a href="#">Nýjar vörur</a></li>
-            <li><a href="#">Tilboðs vörur</a></li>
-            <li><a href="#">Allar vörur</a></li>
-          </ul>
-          <div class="cart">
-            <img src="./icons/cart.svg">
-            <div class="count">1</div>
-         </div>
-        </nav>-->
+
+      <header class="catalogheader">
         <h1 class="heading">Nýjar vörur</h1>
         <h2>Raða eftir:</h2>
-        <div class="order">
+        <div class="sort">
           <button type="submit">Heiti</button>
           <button type="submit">Lægsta verð</button>
           <button type="submit">Hæsta verð</button>
@@ -75,145 +57,142 @@
 
       <main>
         <div class="productcontainer">
-          <div class="products">
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
+            <div class="products">
+              <div class="product">
+                <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+                <h4>Vinalegur vinnuróbot</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir börn</p>
+                </div>
+                <p class="price">1.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">1.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
-              <h4>Tæknilegt móðurborð</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Takmarkað magn</p>
+  
+              <div class="product">
+                <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
+                <h4>Tæknilegt móðurborð</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Takmarkað magn</p>
+                </div>
+                <p class="price">189.000 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">189.000 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
-              <h4>Matrixið</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir róbóta</p>
+  
+              <div class="product">
+                <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
+                <h4>Matrixið</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir róbóta</p>
+                </div>
+                <p class="price">299.999.999.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">299.999.999.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
+  
+              <div class="product">
+                <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+                <h4>Vinalegur vinnuróbot</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir börn</p>
+                </div>
+                <p class="price">1.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">1.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
-              <h4>Tæknilegt móðurborð</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Takmarkað magn</p>
+  
+              <div class="product">
+                <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
+                <h4>Tæknilegt móðurborð</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Takmarkað magn</p>
+                </div>
+                <p class="price">189.000 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">189.000 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
+  
+              <div class="product">
+                <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+                <h4>Vinalegur vinnuróbot</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir börn</p>
+                </div>
+                <p class="price">1.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">1.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
-              <h4>Matrixið</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir róbóta</p>
+  
+              <div class="product">
+                <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
+                <h4>Matrixið</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir róbóta</p>
+                </div>
+                <p class="price">299.999.999.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">299.999.999.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
+  
+              <div class="product">
+                <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+                <h4>Vinalegur vinnuróbot</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir börn</p>
+                </div>
+                <p class="price">1.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">1.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
+  
+              <div class="product">
+                <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+                <h4>Vinalegur vinnuróbot</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir börn</p>
+                </div>
+                <p class="price">1.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">1.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
-              <h4>Tæknilegt móðurborð</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Takmarkað magn</p>
+  
+              <div class="product">
+                <img src="./images/alexandre-debieve-FO7JIlwjOtU-unsplash.jpg">
+                <h4>Tæknilegt móðurborð</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Takmarkað magn</p>
+                </div>
+                <p class="price">189.000 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">189.000 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
-              <h4>Vinalegur vinnuróbot</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir börn</p>
+  
+              <div class="product">
+                <img src="./images/alex-knight-2EJCSULRwC8-unsplash.jpg">
+                <h4>Vinalegur vinnuróbot</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir börn</p>
+                </div>
+                <p class="price">1.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">1.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
-            </div>
-
-            <div class="product">
-              <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
-              <h4>Matrixið</h4>
-              <div class="tags">
-                <p class="tag">Nýtt</p>
-                <p class="tag">Ekki fyrir róbóta</p>
+  
+              <div class="product">
+                <img src="./images/markus-spiske-iar-afB0QQw-unsplash 1.jpg">
+                <h4>Matrixið</h4>
+                <div class="tags">
+                  <p class="tag">Nýtt</p>
+                  <p class="tag">Ekki fyrir róbóta</p>
+                </div>
+                <p class="price">299.999.999.499.990 kr.</p>
+                <button type="submit">SETJA Í KÖRFU</button>
               </div>
-              <p class="price">299.999.999.499.990 kr.</p>
-              <button type="submit">SETJA Í KÖRFU</button>
             </div>
           </div>
-        </div>
       </main>
-      
-      <!--<footer>
-        test
-      </footer>-->
+
       <footer>
         <div>
           <section>

@@ -8,16 +8,15 @@
     width: 1440px;
     height: 1069px;
     background: #FFFFFF;
-
-    h1 {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 0px;
-
-    }
 }
- .order {
+
+.order_head {
+  grid-row-start: 1fr;
+  grid-column-start: 1fr;
+
+}
+
+.order {
   display: flex;
   flex-direction: column;
   align-items: flex-start;

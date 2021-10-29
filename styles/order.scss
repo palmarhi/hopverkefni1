@@ -4,17 +4,29 @@
     grid-template-rows: repeat(3, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-  position: relative;
-  width: 1440px;
-  height: 1069px;
-  background: #FFFFFF;
+    position: relative;
+    width: 1440px;
+    height: 1069px;
+    background: #FFFFFF;
 }
  .order {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+
+  position: static;
+  width: 690px;
+  height: 464px;
+  left: 15px;
+  top: 0px;
+  /*
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+
  }
  /*
 .order form{

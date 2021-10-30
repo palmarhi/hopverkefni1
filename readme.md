@@ -34,6 +34,6 @@ Myndir eru geymdar í `images` möppu og öll icon sem notuð eru á vefsíðum 
 
 ## Vefsíður
 
-[GitHub](https://github.com/palmarhi/hopverkefni1)
-[Netlify](https://festive-hoover-5471f6.netlify.app)
+Hægt að sjá allar skrár á [GitHub](https://github.com/palmarhi/hopverkefni1).
 
+Á [Netlify](https://festive-hoover-5471f6.netlify.app) má skoða vefinn.
